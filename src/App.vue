@@ -10,6 +10,9 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
+  created () {
+    document.title = "Redeem"
+  },
   name: 'App',
 
   components: {
