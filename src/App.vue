@@ -1,13 +1,18 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <div v-if="$isMobile()">
+      
+      </div>
+      <div v-else>
+      
+      </div>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   created () {
@@ -16,7 +21,7 @@ export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    // HelloWorld,
   },
 
   data: () => ({
